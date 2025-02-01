@@ -49,7 +49,7 @@ export async function createPost(_, formData) {
   redirect("/feed");
 }
 
-export async function togglePastsLikeStatus(postId) {
+export async function togglePostsLikeStatus(postId) {
   await updatePostLikeStatus(postId, 2);
   revalidatePath("/", "layout");
 }
