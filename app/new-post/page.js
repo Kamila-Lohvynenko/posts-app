@@ -1,7 +1,5 @@
 "use client";
 
-// import { useFormState } from "react-dom";
-
 import FormSubmit from "@/components/form-submit";
 import { createPost } from "@/actions/posts";
 import { useActionState } from "react";

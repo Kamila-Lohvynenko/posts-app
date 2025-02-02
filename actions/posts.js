@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 
 import { storePost, updatePostLikeStatus } from "@/lib/posts";
-import { uploadImage } from "@/lib/cloudinary";
+import { uploadImage } from "@/lib/uploadToCloudinary";
 
 export async function createPost(_, formData) {
   const title = formData.get("title");
